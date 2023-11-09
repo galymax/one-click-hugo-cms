@@ -7,6 +7,35 @@ public_folder: "img"
 publish_mode: editorial_workflow
 
 collections: # A list of collections the CMS should be able to edit
+  - name: "plan-template"
+    label: "Plan Template"
+    folder: "site/content/plan-templates"
+    create: true
+    fields:
+      - {label: "Product", name: "product", widget: "select", options: ["Web Development", "AWS"]}
+      - label: "Weeks"
+        name: "weeks"
+        widget: "list"
+        fields: 
+          - label: "Days"
+            name: "days",
+            widget: "object"
+            fields:
+              - label: "Mo"
+                name: "mo"
+                widget: "list"
+              - label: "Tu"
+                name: "tu"
+                widget: "list"
+              - label: "We"
+                name: "we"
+                widget: "list"
+              - label: "Th"
+                name: "th"
+                widget: "list"
+              - label: "Fr"
+                name: "fr"
+                widget: "list"
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "site/content/post" # The path to the folder where the documents are stored
