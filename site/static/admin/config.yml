@@ -18,40 +18,36 @@ collections: # A list of collections the CMS should be able to edit
         summary: '{{title}}'
         widget: "list"
         fields:
-          - label: "Days"
-            name: "days"
-            widget: "object"
+          - label: "Mo"
+            name: "mo"
+            widget: "list"
             fields:
-              - label: "Mo"
-                name: "mo"
-                widget: "list"
-                fields:
-                  - {label: "Module", name: "module", widget: select, options: ["M1", "M2", "CS", "LC", "ME"]}
-                  - {label: "TUs", name: "tu", woidget: number, default: 8, min: 1, max: 8, value_type: int}
-              - label: "Tu"
-                name: "tu"
-                widget: "list"
-                fields:
-                  - {label: "Module", name: "module", widget: select, options: ["M1", "M2", "CS", "LC", "ME"]}
-                  - {label: "TUs", name: "tu", woidget: number, default: 8, min: 1, max: 8, value_type: int}
-              - label: "We"
-                name: "we"
-                widget: "list"
-                fields:
-                  - {label: "Module", name: "module", widget: select, options: ["M1", "M2", "CS", "LC", "ME"]}
-                  - {label: "TUs", name: "tu", woidget: number, default: 8, min: 1, max: 8, value_type: int}
-              - label: "Th"
-                name: "th"
-                widget: "list"
-                fields:
-                  - {label: "Module", name: "module", widget: select, options: ["M1", "M2", "CS", "LC", "ME"]}
-                  - {label: "TUs", name: "tu", woidget: number, default: 8, min: 1, max: 8, value_type: int}
-              - label: "Fr"
-                name: "fr"
-                widget: "list"
-                fields:
-                  - {label: "Module", name: "module", widget: select, options: ["M1", "M2", "CS", "LC", "ME"]}
-                  - {label: "TUs", name: "tu", woidget: number, default: 8, min: 1, max: 8, value_type: int}
+              - {label: "Module", name: "module", widget: select, options: ["M1", "M2", "CS", "LC", "ME"]}
+              - {label: "TUs", name: "tu", woidget: number, default: 8, min: 1, max: 8, value_type: int}
+          - label: "Tu"
+            name: "tu"
+            widget: "list"
+            fields:
+              - {label: "Module", name: "module", widget: select, options: ["M1", "M2", "CS", "LC", "ME"]}
+              - {label: "TUs", name: "tu", woidget: number, default: 8, min: 1, max: 8, value_type: int}
+          - label: "We"
+            name: "we"
+            widget: "list"
+            fields:
+              - {label: "Module", name: "module", widget: select, options: ["M1", "M2", "CS", "LC", "ME"]}
+              - {label: "TUs", name: "tu", woidget: number, default: 8, min: 1, max: 8, value_type: int}
+          - label: "Th"
+            name: "th"
+            widget: "list"
+            fields:
+              - {label: "Module", name: "module", widget: select, options: ["M1", "M2", "CS", "LC", "ME"]}
+              - {label: "TUs", name: "tu", woidget: number, default: 8, min: 1, max: 8, value_type: int}
+          - label: "Fr"
+            name: "fr"
+            widget: "list"
+            fields:
+              - {label: "Module", name: "module", widget: select, options: ["M1", "M2", "CS", "LC", "ME"]}
+              - {label: "TUs", name: "tu", woidget: number, default: 8, min: 1, max: 8, value_type: int}
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "site/content/post" # The path to the folder where the documents are stored
