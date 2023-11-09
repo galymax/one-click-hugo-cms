@@ -15,7 +15,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Product", name: "product", widget: "select", options: ["Web Development", "AWS"]}
       - label: "Weeks"
         name: "weeks"
-        summary: '{{filename}}'
+        summary: '{{title}}'
         widget: "list"
         fields:
           - label: "Days"
