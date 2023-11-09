@@ -25,18 +25,23 @@ collections: # A list of collections the CMS should be able to edit
               - label: "Mo"
                 name: "mo"
                 widget: "list"
+                field: {label: "Module", name: "module", widget: select}
               - label: "Tu"
                 name: "tu"
                 widget: "list"
+                field: {label: "Module", name: "module", widget: select}
               - label: "We"
                 name: "we"
                 widget: "list"
+                field: {label: "Module", name: "module", widget: select}
               - label: "Th"
                 name: "th"
                 widget: "list"
+                field: {label: "Module", name: "module", widget: select}
               - label: "Fr"
                 name: "fr"
                 widget: "list"
+                field: {label: "Module", name: "module", widget: select}
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "site/content/post" # The path to the folder where the documents are stored
